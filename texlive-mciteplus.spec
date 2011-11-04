@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/mciteplus
+# catalog-date 2008-09-30 16:07:39 +0200
+# catalog-license lppl
+# catalog-version 1.1
 Name:		texlive-mciteplus
 Version:	1.1
 Release:	1
@@ -48,6 +54,7 @@ other applications such as reference sublisting.
 %doc %{_texmfdistdir}/doc/latex/mciteplus/mciteplus_code.txt
 %doc %{_texmfdistdir}/doc/latex/mciteplus/mciteplus_doc.pdf
 %doc %{_texmfdistdir}/doc/latex/mciteplus/mciteplus_doc.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -58,3 +65,5 @@ other applications such as reference sublisting.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
