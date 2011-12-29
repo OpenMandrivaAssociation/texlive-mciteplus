@@ -17,8 +17,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 The mciteplus LaTeX package is an enhanced reimplementation of
@@ -27,20 +25,12 @@ grouping of multiple citations together as is often done in
 physics journals. An extensive set of features provide for
 other applications such as reference sublisting.
 
-%pre
-    %_texmf_mktexlsr_pre
-
 %post
-    %_texmf_mktexlsr_post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
-    fi
+    %{_sbindir}/texlive.post
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
@@ -55,7 +45,6 @@ other applications such as reference sublisting.
 %doc %{_texmfdistdir}/doc/latex/mciteplus/mciteplus_code.txt
 %doc %{_texmfdistdir}/doc/latex/mciteplus/mciteplus_doc.pdf
 %doc %{_texmfdistdir}/doc/latex/mciteplus/mciteplus_doc.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -66,5 +55,3 @@ other applications such as reference sublisting.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex tex doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
