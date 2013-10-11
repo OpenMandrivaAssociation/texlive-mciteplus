@@ -1,12 +1,12 @@
-# revision 15878
+# revision 31648
 # category Package
 # catalog-ctan /macros/latex/contrib/mciteplus
-# catalog-date 2008-09-30 16:07:39 +0200
+# catalog-date 2013-09-13 13:09:10 +0200
 # catalog-license lppl
-# catalog-version 1.1
+# catalog-version 1.2
 Name:		texlive-mciteplus
-Version:	1.1
-Release:	2
+Version:	1.2
+Release:	1
 Summary:	Enhanced multiple citations
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/mciteplus
@@ -55,17 +55,3 @@ other applications such as reference sublisting.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.1-2
-+ Revision: 753842
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.1-1
-+ Revision: 718983
-- texlive-mciteplus
-- texlive-mciteplus
-- texlive-mciteplus
-- texlive-mciteplus
-
