@@ -6,7 +6,7 @@
 # catalog-version 1.2
 Name:		texlive-mciteplus
 Version:	1.2
-Release:	6
+Release:	7
 Summary:	Enhanced multiple citations
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/mciteplus
