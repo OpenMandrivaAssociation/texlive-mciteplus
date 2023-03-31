@@ -1,6 +1,6 @@
 Name:		texlive-mciteplus
 Version:	31648
-Release:	1
+Release:	2
 Summary:	Enhanced multiple citations
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/mciteplus
