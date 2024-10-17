@@ -3,7 +3,7 @@ Version:	31648
 Release:	2
 Summary:	Enhanced multiple citations
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/mciteplus
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/mciteplus
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mciteplus.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mciteplus.doc.r%{version}.tar.xz
